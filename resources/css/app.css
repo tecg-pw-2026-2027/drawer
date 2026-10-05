@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+@layer components{
+    .drawer{
+        @apply fixed top-0 right-0 bottom-0 w-[40vw] p-4 bg-neutral-100 shadow
+    }
+    .btn{
+        @apply shadow-md rounded-md bg-blue-600 text-white font-bold p-2 cursor-pointer
+    }
+    .container{
+        @apply max-w-160 m-auto min-h-screen bg-neutral-100 shadow p-4
+    }
+}
